@@ -296,13 +296,3 @@ MIT License - Feel free to use, modify, and share!
 
 The code in this repository is licensed under MIT. Audio files may be subject to separate copyright terms.
 
-## Contributing
-
-Contributions welcome! Ideas for new dances:
-- Macarena
-- YMCA
-- Thriller
-- Floss dance
-- Custom cultural dances
-
-Submit a PR or open an issue with your dance ideas!
