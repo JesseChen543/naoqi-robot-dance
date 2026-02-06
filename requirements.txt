@@ -1,0 +1,10 @@
+# Pepper Dance Collection - Requirements
+#
+# Note: This project requires Python 2.7 due to NAOqi SDK limitations.
+# The NAOqi SDK (qi module) must be installed separately from SoftBank.
+#
+# NAOqi SDK is NOT available via pip. Download from:
+# https://developer.softbankrobotics.com/pepper-naoqi-25-downloads
+
+# No additional pip dependencies required.
+# All functionality uses built-in Python 2.7 libraries and NAOqi SDK.

@@ -1,0 +1,40 @@
+Christmas Dance Audio File Information
+======================================
+
+File: christmas.wav
+Source: jingle-bells-348411.mp3
+Duration: 20 seconds (extended from original 15s to match dance)
+Format: WAV, PCM 16-bit
+Sample Rate: 22050 Hz
+Channels: Mono (1 channel)
+File Size: 862 KB
+
+Created: 2025-11-19
+Purpose: Background music for Pepper's Christmas dance choreography
+
+Conversion Command:
+-------------------
+ffmpeg -i jingle-bells-348411.mp3 -t 20 -ar 22050 -ac 1 -sample_fmt s16 -y christmas.wav
+
+Why 20 seconds?
+---------------
+The dance choreography actually takes ~20 seconds to complete:
+- Section 1 (0-3s): Wave introduction
+- Section 2 (3-6s): Arm celebrations
+- Section 3 (6-10s): 360° spin (takes ~4s in practice)
+- Section 4 (10-12s): Wave patterns
+- Section 5 (12-15s): Grand finale with bow
+- Section 6 (15-20s): Return arms to rest
+
+The original 15-second audio was too short, ending before the dance finished.
+
+Usage:
+------
+1. From PC: Script automatically loads from pepper_movement/audio/christmas.wav
+2. On Pepper: Upload to /home/nao/christmas.wav
+   scp pepper_movement/audio/christmas.wav nao@192.168.0.135:/home/nao/
+
+To recreate this file:
+----------------------
+python pepper_movement/prepare_audio_simple.py
+(Requires ffmpeg to be installed)
