@@ -10,7 +10,7 @@ DESCRIPTION:
 
 USAGE:
     python custom_dance.py --ip 127.0.0.1      # On Pepper via SSH
-    python custom_dance.py --ip 192.168.0.135  # From PC
+    python custom_dance.py --ip <PEPPER_IP>  # From PC
 
 CUSTOMIZATION:
     1. Rename the class to your dance name
@@ -267,7 +267,7 @@ def main():
         epilog="""
 Examples:
   python custom_dance.py --ip 127.0.0.1      # On Pepper via SSH
-  python custom_dance.py --ip 192.168.0.135  # From PC
+  python custom_dance.py --ip <PEPPER_IP>  # From PC
         """
     )
     parser.add_argument("--ip", type=str, default="127.0.0.1",

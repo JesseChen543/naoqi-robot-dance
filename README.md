@@ -36,7 +36,7 @@ A collection of fun, ready-to-use dance routines for **SoftBank Pepper Robot** (
 python gangnam_dance.py --ip 127.0.0.1
 
 # From PC (replace with your Pepper's IP)
-python gangnam_dance.py --ip 192.168.0.135
+python gangnam_dance.py --ip <PEPPER_IP>
 ```
 
 ### Available Dance Scripts
@@ -93,7 +93,7 @@ set PYTHONPATH=C:\path\to\naoqi-sdk\lib\python2.7\site-packages;%PYTHONPATH%
 
 # Run dance remotely (replace with your Pepper's IP)
 cd dances
-python gangnam_dance.py --ip 192.168.0.135
+python gangnam_dance.py --ip <PEPPER_IP>
 ```
 
 ### Complete Deployment (Dance + Music)
@@ -178,7 +178,7 @@ Use the template to create your own dances:
 ```python
 from core.base_motion import connect_to_pepper
 
-session = connect_to_pepper(ip="192.168.0.135")
+session = connect_to_pepper(ip="<PEPPER_IP>")
 motion = session.service("ALMotion")
 posture = session.service("ALRobotPosture")
 
@@ -201,7 +201,7 @@ See `examples/custom_dance.py` for a complete template.
 from core.base_motion import BaseMotion, connect_to_pepper
 
 # Connect to Pepper
-session = connect_to_pepper(ip="192.168.0.135", port=9559)
+session = connect_to_pepper(ip="<PEPPER_IP>", port=9559)
 
 # Create motion controller
 controller = BaseMotion(session)
@@ -273,12 +273,14 @@ class MyDance(object):
 
 ## Related Projects
 
-This is a standalone dance module extracted from the [Wonderbyte Pepper Project](https://github.com/JesseChen543/pepper), a comprehensive toolkit for Pepper robot development including:
+Part of the Wonderbyte Pepper Project ecosystem:
 
-- Voice/TTS control
-- Camera streaming
-- Web-based control interface
-- And more!
+- [pepper-led-control](https://github.com/JesseChen543/pepper-led-control) — LED and lighting control
+- [pepper-robot-camera](https://github.com/JesseChen543/pepper-robot-camera) — Camera capture and photo gallery
+- [pepper-motion-control](https://github.com/JesseChen543/pepper-motion-control) — Interactive movement CLI + web UI
+- [pepper-realtime-voice](https://github.com/JesseChen543/pepper-realtime-voice) — OpenAI Realtime API voice
+- [pepper-robot-dashboard](https://github.com/JesseChen543/pepper-robot-dashboard) — Main control dashboard
+- [pepper-youtube](https://github.com/JesseChen543/pepper-youtube-player) — YouTube player (yt-dlp download, HTML5 video)
 
 ## Keywords
 

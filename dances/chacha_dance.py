@@ -29,7 +29,7 @@ USAGE:
     python chacha_dance.py --ip 127.0.0.1
 
     # From PC:
-    python chacha_dance.py --ip 192.168.0.135
+    python chacha_dance.py --ip <PEPPER_IP>
 
 DEPENDENCIES:
     - NAOqi 2.5
@@ -367,10 +367,10 @@ Examples:
   python chacha_dance.py --ip 127.0.0.1
 
   # From PC
-  python chacha_dance.py --ip 192.168.0.135
+  python chacha_dance.py --ip <PEPPER_IP>
 
 Optional: Upload Cha Cha Slide music to Pepper
-  scp pepper_movement/audio/chacha.wav nao@192.168.0.135:/home/nao/chacha.wav
+  scp pepper_movement/audio/chacha.wav nao@<PEPPER_IP>:/home/nao/chacha.wav
         """
     )
     parser.add_argument("--ip", type=str, default="127.0.0.1",

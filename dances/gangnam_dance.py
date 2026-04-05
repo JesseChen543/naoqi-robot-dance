@@ -27,7 +27,7 @@ USAGE:
     python gangnam_dance.py --ip 127.0.0.1
 
     # From PC:
-    python gangnam_dance.py --ip 192.168.0.135
+    python gangnam_dance.py --ip <PEPPER_IP>
 
 DEPENDENCIES:
     - NAOqi 2.5
@@ -357,10 +357,10 @@ Examples:
   python gangnam_dance.py --ip 127.0.0.1
 
   # From PC
-  python gangnam_dance.py --ip 192.168.0.135
+  python gangnam_dance.py --ip <PEPPER_IP>
 
 Optional: Upload Gangnam Style music to Pepper
-  scp pepper_movement/audio/gangnam.wav nao@192.168.0.135:/home/nao/gangnam.wav
+  scp pepper_movement/audio/gangnam.wav nao@<PEPPER_IP>:/home/nao/gangnam.wav
         """
     )
     parser.add_argument("--ip", type=str, default="127.0.0.1",

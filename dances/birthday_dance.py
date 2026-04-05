@@ -21,7 +21,7 @@ USAGE:
     python birthday_dance.py --ip 127.0.0.1
 
     # From PC:
-    python birthday_dance.py --ip 192.168.0.135
+    python birthday_dance.py --ip <PEPPER_IP>
 
 DEPENDENCIES:
     - NAOqi 2.5
@@ -384,10 +384,10 @@ Examples:
   python birthday_dance.py --ip 127.0.0.1
 
   # From PC
-  python birthday_dance.py --ip 192.168.0.135
+  python birthday_dance.py --ip <PEPPER_IP>
 
 Optional: Upload birthday music to Pepper
-  scp pepper_movement/audio/birthday.wav nao@192.168.0.135:/home/nao/birthday.wav
+  scp pepper_movement/audio/birthday.wav nao@<PEPPER_IP>:/home/nao/birthday.wav
         """
     )
     parser.add_argument("--ip", type=str, default="127.0.0.1",

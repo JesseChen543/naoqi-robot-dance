@@ -34,7 +34,7 @@ USAGE:
     python robot_dance.py --ip 127.0.0.1
 
     # From PC:
-    python robot_dance.py --ip 192.168.0.135
+    python robot_dance.py --ip <PEPPER_IP>
 
 DEPENDENCIES:
     - NAOqi 2.5
@@ -435,10 +435,10 @@ Examples:
   python robot_dance.py --ip 127.0.0.1
 
   # From PC
-  python robot_dance.py --ip 192.168.0.135
+  python robot_dance.py --ip <PEPPER_IP>
 
 Optional: Upload robot music to Pepper
-  scp pepper_movement/audio/robot.wav nao@192.168.0.135:/home/nao/robot.wav
+  scp pepper_movement/audio/robot.wav nao@<PEPPER_IP>:/home/nao/robot.wav
         """
     )
     parser.add_argument("--ip", type=str, default="127.0.0.1",

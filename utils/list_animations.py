@@ -6,7 +6,7 @@ list_animations.py - Utility to list Pepper's installed animations and tags.
 
 USAGE:
     python list_animations.py --ip 127.0.0.1 --port 9559
-    python list_animations.py --ip 192.168.0.135 --show-tags
+    python list_animations.py --ip <PEPPER_IP> --show-tags
     python list_animations.py --tag Hello
 """
 

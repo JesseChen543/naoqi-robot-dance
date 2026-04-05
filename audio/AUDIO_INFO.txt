@@ -32,7 +32,7 @@ Usage:
 ------
 1. From PC: Script automatically loads from pepper_movement/audio/christmas.wav
 2. On Pepper: Upload to /home/nao/christmas.wav
-   scp pepper_movement/audio/christmas.wav nao@192.168.0.135:/home/nao/
+   scp pepper_movement/audio/christmas.wav nao@<PEPPER_IP>:/home/nao/
 
 To recreate this file:
 ----------------------

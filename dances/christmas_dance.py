@@ -19,7 +19,7 @@ USAGE:
     python christmas_dance.py --ip 127.0.0.1
 
     # From PC:
-    python christmas_dance.py --ip 192.168.0.135
+    python christmas_dance.py --ip <PEPPER_IP>
 
 DEPENDENCIES:
     - NAOqi 2.5
@@ -351,10 +351,10 @@ Examples:
   python christmas_dance.py --ip 127.0.0.1
 
   # From PC
-  python christmas_dance.py --ip 192.168.0.135
+  python christmas_dance.py --ip <PEPPER_IP>
 
 Optional: Upload Christmas music to Pepper
-  scp pepper_movement/audio/christmas.wav nao@192.168.0.135:/home/nao/christmas.wav
+  scp pepper_movement/audio/christmas.wav nao@<PEPPER_IP>:/home/nao/christmas.wav
         """
     )
     parser.add_argument("--ip", type=str, default="127.0.0.1",
